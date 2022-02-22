@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Jogo de acerto</title>
+  </head>
+  <body>
+    <main>
+      <section class="dificuldade">
+        <h1 id="rank"></h1>
+        <fieldset class="niveis">
+          <label>
+            <input type="radio" name="nivel" value="facil" />
+            <span> Facil </span>
+          </label>
+          <label>
+            <input type="radio" name="nivel" value="normal" checked />
+            <span> Normal </span>
+          </label>
+          <label>
+            <input type="radio" name="nivel" value="dificil" />
+            <span> Dificil </span>
+          </label>
+        </fieldset>
+        <button id="start">Iniciar</button>
+      </section>
+      <section class="jogo" id="jogo">
+        <header>
+          <h3 id="cronometro"></h3>
+          <h1 id="pont"></h1>
+        </header>
+        <div id="alvos"></div>
+      </section>
+    </main>
+  </body>
+</html>
