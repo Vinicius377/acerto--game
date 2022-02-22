@@ -6,11 +6,14 @@
 body {
   min-height: 100vh;
   background-color: rgb(2, 4, 14);
+}
+main {
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .dificuldade {
   display: flex;
   flex-direction: column;
@@ -49,6 +52,9 @@ body {
 .dificuldade button:hover {
   filter: brightness(0.9);
 }
+#rank {
+  color: white;
+}
 
 /* 
     Jogo
@@ -58,15 +64,34 @@ body {
   color: white;
   font-size: 2rem;
   display: none;
+  width: 100%;
+  height: 100%;
 }
 .alvo {
   background-color: green;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   z-index: 100;
 }
-#rank {
-  color: white;
+.alvos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* 
+  Placar
+*/
+.jogo header {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between;
+}
+.jogo span {
+  background-color: white;
+  color: rgb(2, 4, 14);
+  padding: 0 15px;
+  border-radius: 8px;
 }
