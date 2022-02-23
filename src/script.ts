@@ -120,3 +120,9 @@ class Game extends Alvo {
     }, 1000);
   }
 }
+const mira = document.querySelector("#mira") as HTMLImageElement;
+mira.removeEventListener;
+window.addEventListener("mousemove", (e) => {
+  mira.style.left = `${e.clientX - 24}px`;
+  mira.style.top = `${e.clientY - 22}px`;
+});
