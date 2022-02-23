@@ -58,7 +58,10 @@ class Alvo {
     }
   }
   onClick({ target }: any) {
-    target.remove();
+    target.classList.add("destroy");
+    setTimeout(() => {
+      target.remove();
+    }, 50);
     this.countAcerto++;
     const pontuação = document.getElementById("pont") as HTMLSpanElement;
     pontuação.innerHTML = "" + this.countAcerto;
@@ -121,7 +124,6 @@ class Game extends Alvo {
   }
 }
 const mira = document.querySelector("#mira") as HTMLImageElement;
-mira.removeEventListener;
 window.addEventListener("mousemove", (e) => {
   mira.style.left = `${e.clientX - 24}px`;
   mira.style.top = `${e.clientY - 22}px`;
